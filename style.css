@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+:root {
+    --background-color: hsl(212, 12%, 21%);
+    --background-calc-color: hsl(60, 1%, 70%);
+    --header-text-color: white;
+    --background-screen-color: hsl(120, 13%, 31%);
+    --background-equal-color: rgb(255, 255, 255);
+    --hover-color: rgb(218, 218, 218);
+    --hover-equal-color: rgb(218, 87, 0);
+    --focus-color: rgb(15, 65, 85);
+    --focus-text-color: white;
+    --funciones-background: rgb(0, 0, 0);
+}
+
+html {
+    background-color: var(--background-color);
+    font-family: 'Ubuntu', sans-serif;
+}   
+
+h1 {
+    color: var(--header-text-color);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    min-width: 500px;
+    width: 50%;
+    margin: auto;
+    height: 100vh;
+    border-radius: 50px;
+}
+
+#calculadora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    min-width: 500px;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    background-color: var(--background-calc-color);
+    border-radius: 50px;
+}
+
+#ScreenType, #ScreenResults {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: var(--background-screen-color);
+    color: var(--header-text-color);
+    width: 80%;
+    padding: 1rem;
+    text-align: center;
+    margin: none;
+    
+}
+
+#ScreenType {
+    justify-content: flex-start;
+    height: 2rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 1rem;
+    box-shadow: 1px 1px 15px 10px rgb(0, 0, 0, 0.2);
+    
+}
+
+#ScreenResults {
+    justify-content: flex-end;
+    font-size: 2rem;
+    height: 3rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#botones {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+#CalcNum, #CalcFunc {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+
+}
+
+#CalcNum {
+    width: 55%;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#CalcFunc {
+    grid-template-columns: 50% 50%;
+    width: 35%;
+}
+
+.numeros, .funciones, .funcionesBorrar {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 15px 10px rgb(0, 0, 0, 0.2);
+    border: none;
+}
+
+.funciones, .funcionesIgual {
+    color: var(--background-equal-color);
+    background-color: var(--funciones-background);
+}
+
+.numeros:focus, .numeros:hover {
+    background-color: var(--focus-color);
+    color: var(--focus-text-color);
+}
+
+.funcionesIgual {
+    grid-column: 2;
+    grid-row: 3 / span 2;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 15px 10px rgb(0, 0, 0, 0.2);
+}
+
+.funcionesIgual:hover, .funciones:hover, .funciones:focus, .funcionesIgual:focus  {
+    background-color: var(--hover-equal-color);
+}
