@@ -20,6 +20,7 @@ html {
 
 h1 {
     color: var(--header-text-color);
+    text-align: center;
 }
 
 #container {
@@ -106,7 +107,7 @@ h1 {
     width: 35%;
 }
 
-.numeros, .funciones, .funcionesBorrar {
+.numeros, .funciones {
     width: 100%;
     height: 3rem;
     font-size: 1.5rem;
@@ -136,4 +137,23 @@ h1 {
 
 .funcionesIgual:hover, .funciones:hover, .funciones:focus, .funcionesIgual:focus  {
     background-color: var(--hover-equal-color);
+}
+
+
+@media screen and (max-width: 600px) {
+    #container, #calculadora {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .numeros, .funciones{
+        font-size: .8rem;
+
+    }
+
+
+
 }
