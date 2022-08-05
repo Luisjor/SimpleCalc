@@ -43,10 +43,10 @@ h1 {
     max-width: 550px;
     min-width: 500px;
     width: 50%;
-    height: 50%;
     margin: auto;
     background-color: var(--background-calc-color);
     border-radius: 50px;
+    heigth: auto;
 }
 
 #ScreenType, #ScreenResults {
