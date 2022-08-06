@@ -2,7 +2,7 @@
 
 :root {
     --background-color: hsl(212, 12%, 21%);
-    --background-calc-color: hsl(60, 1%, 70%);
+    --background-calc-color: hsl(0, 0%, 57%);
     --header-text-color: white;
     --background-screen-color: hsl(120, 13%, 31%);
     --background-equal-color: rgb(255, 255, 255);
@@ -10,8 +10,9 @@
     --hover-equal-color: rgb(218, 87, 0);
     --focus-color: rgb(15, 65, 85);
     --focus-text-color: white;
-    --funciones-background: rgb(0, 0, 0);
     --focus-input-color: rgb(207, 207, 207);
+    --funciones-background: rgb(0, 0, 0);
+    
 }
 
 html {
@@ -53,27 +54,29 @@ h1 {
     background-color: var(--background-screen-color);
     width: 90%;
     padding: 1rem;
-    text-align: center;
     margin: none;
-    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
     
 }
 
 #ScreenType {
     justify-content: flex-start;
-    height: 3rem;
+    min-height: 4.5rem;
+    height: auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     font-size: 2rem;
     box-shadow: 1px 1px 15px 10px rgb(0, 0, 0, 0.2);
     color: var(--focus-input-color);
-    
 }
 
 #ScreenResults {
     justify-content: flex-end;
+    text-align: end;
     font-size: 3rem;
-    height: 4rem;
+    min-height: 6rem;
+    height: auto;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: var(--header-text-color);
