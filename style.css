@@ -38,7 +38,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 550px;
+    width: 450px;
     margin: auto;
     background-color: var(--background-calc-color);
     border-radius: 20px;
@@ -51,7 +51,7 @@ h1 {
     box-sizing: border-box;
     background-color: var(--background-screen-color);
     color: var(--header-text-color);
-    width: 80%;
+    width: 90%;
     padding: 1rem;
     text-align: center;
     margin: none;
@@ -79,7 +79,7 @@ h1 {
 
 #botones {
     display: flex;
-    width: 80%;
+    width: 90%;
     justify-content: space-around;
     margin: 1rem;
 }
