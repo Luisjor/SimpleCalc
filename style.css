@@ -124,7 +124,7 @@ h1 {
 .funcionesIgual {
     grid-column: 2;
     grid-row: 3 / span 2;
-    border-radius: 25px;
+    border-radius: 10px;
     width: 100%;
     font-size: 1.5rem;
     box-shadow: 1px 1px 15px 10px rgb(0, 0, 0, 0.2);
